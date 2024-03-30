@@ -8,6 +8,7 @@
     ./kitty.nix
     ./bash
     ./vim
+    ./x
   ];
 
   home = {
