@@ -21,6 +21,7 @@
 
     packages = with pkgs; [
       neofetch
+      onefetch
     ];
 
   };
