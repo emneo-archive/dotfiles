@@ -6,6 +6,7 @@
     ./git
     ./neofetch
     ./kitty.nix
+    ./bash
   ];
 
   home = {
