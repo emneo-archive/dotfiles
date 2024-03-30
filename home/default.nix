@@ -9,6 +9,7 @@
     ./bash
     ./vim
     ./x
+    ./tmux
   ];
 
   home = {
@@ -24,11 +25,11 @@
     packages = with pkgs; [
       neofetch
       onefetch
+      tmux
     ];
 
   };
   programs = {
-    tmux.enable = true;
     direnv = {
       enable = true;
       nix-direnv.enable = true;
