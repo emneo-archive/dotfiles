@@ -7,6 +7,7 @@
     ./neofetch
     ./kitty.nix
     ./bash
+    ./vim
   ];
 
   home = {
