@@ -79,6 +79,7 @@
   users.users.huntears = {
     isNormalUser = true;
     extraGroups = [ "wheel" ];
+    initialPassword = "kanker";
     packages =
       let
         vencord = (pkgs.discord.override {
