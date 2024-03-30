@@ -5,6 +5,7 @@
   imports = [
     ./git
     ./neofetch
+    ./kitty.nix
   ];
 
   home = {
