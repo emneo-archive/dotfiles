@@ -9,16 +9,23 @@
         nixpkgs.follows = "nixpkgs";
       };
     };
+
+    home-manager = {
+      url = "github:nix-community/home-manager/release-23.11";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
     { nixpkgs
     , nixos-hardware
     , pre-commit-hooks
+    , home-manager
     , ...
     }:
     let
       system = "x86_64-linux";
+      username = "huntears";
 
       pkgs-settings = {
         inherit system;
@@ -30,6 +37,15 @@
       mod-hardware = with nixos-hardware.nixosModules; [
         framework-12th-gen-intel
       ];
+
+      home-manager-conf = {
+        useGlobalPkgs = true;
+        useUserPackages = true;
+        users.${username} = import ./home;
+        extraSpecialArgs = {
+          inherit username system;
+        };
+      };
     in
     rec {
       formatter.${system} = pkgs.nixpkgs-fmt;
@@ -39,6 +55,8 @@
           modules = [
             ./configuration.nix
             ./hardware-configuration.nix
+            home-manager.nixosModules.home-manager
+            { home-manager = home-manager-conf; }
           ] ++ mod-hardware;
         };
       };
