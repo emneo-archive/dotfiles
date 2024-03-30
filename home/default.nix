@@ -10,6 +10,9 @@
     ./vim
     ./x
     ./tmux
+    ./extra_files.nix
+    ./qtile
+    ./betterlockscreen
   ];
 
   home = {
@@ -26,6 +29,7 @@
       neofetch
       onefetch
       tmux
+      feh
     ];
 
   };
