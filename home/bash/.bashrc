@@ -38,3 +38,7 @@ export EDITOR=vim
 export VISUAL=vim
 
 alias wttr="curl https://wttr.in/toulouse"
+
+eval "$(direnv hook bash)"
+
+alias ufda="echo 'use flake' | tee .envrc; direnv allow"
