@@ -99,6 +99,20 @@
       ];
   };
 
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+    dina-font
+    fira-code
+    fira-code-symbols
+    liberation_ttf
+    mplus-outline-fonts.githubRelease
+    noto-fonts
+    noto-fonts-cjk
+    noto-fonts-emoji
+    proggyfonts
+    apl386
+  ];
+
   nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
