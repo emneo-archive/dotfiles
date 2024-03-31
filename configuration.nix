@@ -29,6 +29,12 @@
     };
   };
 
+  virtualisation = {
+    docker = {
+      enable = true;
+    };
+  };
+
   networking.hostName = "jiyu"; # Define your hostname.
   # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -78,7 +84,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.huntears = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ];
+    extraGroups = [ "wheel" "docker" "audio" ];
     initialPassword = "kanker";
     packages =
       let

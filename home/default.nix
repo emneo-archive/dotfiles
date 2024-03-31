@@ -35,6 +35,7 @@
       spotify
       gimp
       ncdu
+      distrobox
     ];
 
   };
