@@ -48,6 +48,7 @@
       bitwarden
       pamixer
       playerctl
+      tokei
     ];
 
   };
