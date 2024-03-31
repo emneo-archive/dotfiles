@@ -14,6 +14,7 @@
     ./qtile
     ./betterlockscreen
     ./picom
+    ./dunst
   ];
 
   home = {
@@ -37,6 +38,7 @@
       ncdu
       distrobox
       brightnessctl
+      libnotify
     ];
 
   };

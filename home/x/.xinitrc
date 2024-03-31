@@ -45,4 +45,5 @@ fi
 
 # ↓ Wm startup
 picom -f &
+dunst &
 exec qtile start
