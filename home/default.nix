@@ -49,6 +49,7 @@
       pamixer
       playerctl
       tokei
+      ripgrep
     ];
 
   };
