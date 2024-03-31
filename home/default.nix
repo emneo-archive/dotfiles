@@ -13,6 +13,7 @@
     ./extra_files.nix
     ./qtile
     ./betterlockscreen
+    ./picom
   ];
 
   home = {
@@ -30,6 +31,7 @@
       onefetch
       tmux
       feh
+      picom
     ];
 
   };
