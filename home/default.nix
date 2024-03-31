@@ -15,6 +15,7 @@
     ./betterlockscreen
     ./picom
     ./dunst
+    ./thunar
   ];
 
   home = {
