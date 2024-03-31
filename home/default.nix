@@ -41,6 +41,7 @@
       brightnessctl
       libnotify
       tldr
+      dmenu
     ];
 
   };
