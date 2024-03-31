@@ -40,6 +40,7 @@
       distrobox
       brightnessctl
       libnotify
+      tldr
     ];
 
   };
