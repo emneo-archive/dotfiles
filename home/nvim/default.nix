@@ -1,4 +1,4 @@
-{ pkgs, ecsls, system, ... }:
+{ pkgs, ... }:
 {
   home.file = {
     nvim_conf = {
