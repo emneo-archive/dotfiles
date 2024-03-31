@@ -36,6 +36,7 @@
       gimp
       ncdu
       distrobox
+      brightnessctl
     ];
 
   };
