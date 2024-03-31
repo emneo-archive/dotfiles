@@ -46,4 +46,5 @@ fi
 # ↓ Wm startup
 picom -f &
 dunst &
+flameshot &
 exec qtile start

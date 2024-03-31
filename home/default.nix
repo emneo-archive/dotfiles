@@ -16,6 +16,7 @@
     ./picom
     ./dunst
     ./thunar
+    ./flameshot.nix
   ];
 
   home = {
