@@ -32,6 +32,9 @@
       tmux
       feh
       picom
+      spotify
+      gimp
+      ncdu
     ];
 
   };
