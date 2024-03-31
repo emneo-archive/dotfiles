@@ -44,6 +44,7 @@
       tldr
       dmenu
       bitwarden
+      pamixer
     ];
 
   };
