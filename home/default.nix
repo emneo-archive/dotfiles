@@ -17,6 +17,7 @@
     ./dunst
     ./thunar
     ./flameshot.nix
+    ./btop
   ];
 
   home = {
