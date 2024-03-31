@@ -67,6 +67,7 @@
       backend = "x11";
     };
   };
+  services.fprintd.enable = true;
 
 
 
