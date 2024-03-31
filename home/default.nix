@@ -18,6 +18,7 @@
     ./thunar
     ./flameshot.nix
     ./btop
+    ./nvim
   ];
 
   home = {
