@@ -47,6 +47,7 @@
       dmenu
       bitwarden
       pamixer
+      playerctl
     ];
 
   };
