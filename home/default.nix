@@ -43,6 +43,7 @@
       libnotify
       tldr
       dmenu
+      bitwarden
     ];
 
   };
