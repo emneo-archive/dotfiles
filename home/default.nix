@@ -50,6 +50,8 @@
       playerctl
       tokei
       ripgrep
+      restic
+      rclone
     ];
 
   };
