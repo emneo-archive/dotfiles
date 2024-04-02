@@ -112,8 +112,12 @@
         git
         vencord
         pavucontrol
+        man-pages
+        man-pages-posix
       ];
   };
+
+  documentation.dev.enable = true;
 
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
