@@ -52,6 +52,7 @@
       ripgrep
       restic
       rclone
+      vesktop
     ];
 
   };

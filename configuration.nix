@@ -96,25 +96,17 @@
     isNormalUser = true;
     extraGroups = [ "wheel" "docker" "audio" ];
     initialPassword = "kanker";
-    packages =
-      let
-        vencord = (pkgs.discord.override {
-          withOpenASAR = true;
-          withVencord = true;
-        });
-      in
-      with pkgs; [
-        firefox
-        tree
-        vim
-        htop
-        curl
-        git
-        vencord
-        pavucontrol
-        man-pages
-        man-pages-posix
-      ];
+    packages = with pkgs; [
+      firefox
+      tree
+      vim
+      htop
+      curl
+      git
+      pavucontrol
+      man-pages
+      man-pages-posix
+    ];
   };
 
   documentation.dev.enable = true;
