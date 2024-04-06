@@ -53,6 +53,7 @@
       restic
       rclone
       vesktop
+      signal-desktop
     ];
 
   };
