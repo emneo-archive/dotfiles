@@ -68,6 +68,7 @@
     };
   };
   services.fprintd.enable = true;
+  services.mullvad-vpn.enable = true;
 
 
 
