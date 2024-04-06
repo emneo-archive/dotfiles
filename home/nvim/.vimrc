@@ -14,7 +14,7 @@ set noswapfile
 set undodir=$HOME/.vim/undodir
 set undofile
 
-set colorcolumn=80
+set colorcolumn=81,101,121
 set cursorline
 
 lua require("init")
