@@ -54,6 +54,7 @@
       rclone
       vesktop
       signal-desktop
+      arandr
     ];
 
   };

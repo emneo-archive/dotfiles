@@ -22,5 +22,6 @@ floating_layout = Floating(
         Match(wm_class="confirmreset"),
         Match(wm_class="ssh-askpass"),
         Match(title="pinentry"),
+        Match(title="Screen Layout Editor"), # arandr
     ],
 )
