@@ -13,6 +13,7 @@ from .overides import (
 )
 
 from .spotify import SpotifyNowPlaying
+from .wttr import Wttr
 
 __all__ = (
     "widget_defaults",
@@ -25,6 +26,7 @@ __all__ = (
     "QuickExit",
     "Separator",
     "SpotifyNowPlaying",
+    "Wttr",
     "TaskList",
     "Systray",
 )
