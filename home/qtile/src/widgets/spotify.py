@@ -1,4 +1,4 @@
-"""Wakatime widget inspired by drawbu."""
+"""Spotify widget"""
 from typing import List
 import subprocess
 
