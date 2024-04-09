@@ -13,29 +13,10 @@ from widgets import (
     SpotifyNowPlaying,
     Wttr,
     Systray,
-    TaskList,
 )
 
 
 class Bar(bar.Bar):
-    _widgets = [
-        GroupBox,
-        Separator,
-        TaskList,
-        Separator,
-        Prompt,
-        Wttr,
-        SpotifyNowPlaying,
-        Battery,
-        Memory,
-        CPUGraph,
-        Separator,
-        widget.Volume,
-        Clock,
-        Separator,
-        QuickExit,
-    ]
-
     def __init__(self, id_):
         self.id = id_
         super().__init__(
@@ -46,7 +27,21 @@ class Bar(bar.Bar):
         )
 
     def _build_widgets(self):
-        widgets_copy = [widget_cls() for widget_cls in self._widgets]
+        widgets_copy = [
+          GroupBox(),
+          widget.Spacer(length=bar.STRETCH),
+          Prompt(),
+          Wttr(),
+          SpotifyNowPlaying(),
+          Battery(),
+          Memory(),
+          CPUGraph(),
+          Separator(),
+          widget.Volume(),
+          Clock(),
+          Separator(),
+          QuickExit(),
+        ]
 
         if self.id == 0:
             widgets_copy.insert(13, Systray())
