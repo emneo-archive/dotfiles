@@ -54,6 +54,7 @@
       vesktop
       signal-desktop
       arandr
+      ungoogled-chromium
     ];
 
   };
