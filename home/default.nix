@@ -55,6 +55,9 @@
       signal-desktop
       arandr
       ungoogled-chromium
+      file
+      zip
+      unzip
     ];
 
   };
