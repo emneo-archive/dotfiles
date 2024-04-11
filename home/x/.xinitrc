@@ -44,7 +44,7 @@ if command -v dbus-update-activation-environment >/dev/null 2>&1; then
 fi
 
 # ↓ Wm startup
-picom -f &
+picom &
 dunst &
 flameshot &
 exec qtile start
