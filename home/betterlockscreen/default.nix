@@ -2,6 +2,7 @@
 {
   services.betterlockscreen = {
     enable = true;
+    # TODO: Fix this as it doesn't look like it works
     arguments = [ "-u ~/assets/wallpaper.png" ];
   };
 
