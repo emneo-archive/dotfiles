@@ -45,7 +45,6 @@
       libnotify
       tldr
       dmenu
-      bitwarden
       pamixer
       playerctl
       tokei
