@@ -36,12 +36,8 @@ def toggle_keypad(control: int, state: bool):
 
 keys = [
     Key([mod], "e", lazy.spawn("thunar")),
-    Key([mod], "v", lazy.spawn("kitty -e pulsemixer")),
-    Key([mod], "h", lazy.spawn("kitty -e nmtui")),
-    Key([mod, "shift"], "v", lazy.spawn("pavucontrol")),
     Key([mod], "l", lazy.spawn("betterlockscreen -l dimblur")),
     Key([mod], "f", lazy.window.toggle_floating()),
-    Key([mod], "b", lazy.spawn("firefox")),
     Key([mod], "d", lazy.spawn("dmenu_run")),
     Key([], "Print", lazy.spawn("flameshot gui --clipboard")),
     Key([mod], "space", lazy.layout.next()),
@@ -53,7 +49,6 @@ keys = [
     Key([mod, "control"], "r", lazy.reload_config()),
     Key([mod, "control"], "q", lazy.shutdown()),
     Key([mod], "r", lazy.spawncmd()),
-    Key([], "XF86TouchpadToggle", lazy.function(toggle_keypad)),
     # Backlight
     Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +5%")),
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 5%-")),
