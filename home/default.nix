@@ -58,6 +58,7 @@
       file
       zip
       unzip
+      bitwarden
     ];
 
   };
