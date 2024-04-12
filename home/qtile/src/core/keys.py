@@ -39,7 +39,7 @@ keys = [
     Key([mod], "v", lazy.spawn("kitty -e pulsemixer")),
     Key([mod], "h", lazy.spawn("kitty -e nmtui")),
     Key([mod, "shift"], "v", lazy.spawn("pavucontrol")),
-    Key([mod], "l", lazy.spawn("betterlockscreen -l blur dim")),
+    Key([mod], "l", lazy.spawn("betterlockscreen -l dimblur")),
     Key([mod], "f", lazy.window.toggle_floating()),
     Key([mod], "b", lazy.spawn("firefox")),
     Key([mod], "d", lazy.spawn("dmenu_run")),
