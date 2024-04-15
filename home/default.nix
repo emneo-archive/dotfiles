@@ -59,6 +59,7 @@
       zip
       unzip
       bitwarden
+      prismlauncher
     ];
 
   };
