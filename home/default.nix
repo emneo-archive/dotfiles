@@ -60,6 +60,7 @@
       unzip
       bitwarden
       prismlauncher
+      libreoffice
     ];
 
   };
