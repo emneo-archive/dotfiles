@@ -61,6 +61,7 @@
       bitwarden
       prismlauncher
       libreoffice
+      exegol
     ];
 
   };
