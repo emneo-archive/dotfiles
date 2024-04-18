@@ -35,6 +35,7 @@ lspconfig.clangd.setup({
   }
 })
 lspconfig.pyright.setup({})
+lspconfig.zls.setup({})
 
 lsp.on_attach(function(_, bufnr)
   lsp.default_keymaps { buffer = bufnr }

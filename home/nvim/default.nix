@@ -32,6 +32,7 @@
       llvmPackages_latest.clang
       nodejs
       xclip
+      zls
     ];
   };
 }
