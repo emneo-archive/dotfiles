@@ -62,6 +62,7 @@
       prismlauncher
       libreoffice
       exegol
+      thunderbird
     ];
 
   };
