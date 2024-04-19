@@ -63,6 +63,7 @@
       libreoffice
       exegol
       thunderbird
+      ffmpeg
     ];
 
   };
