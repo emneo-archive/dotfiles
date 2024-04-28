@@ -60,7 +60,6 @@
   services.xserver = {
     enable = true;
     displayManager.startx.enable = true;
-    libinput.enable = true;
 
     windowManager.qtile = {
       enable = true;
@@ -69,6 +68,7 @@
   };
   services.fprintd.enable = true;
   services.mullvad-vpn.enable = true;
+  services.libinput.enable = true;
 
 
 
