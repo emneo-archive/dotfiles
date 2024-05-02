@@ -49,3 +49,12 @@ end)
 
 lsp.setup()
 
+lsp.format_on_save({
+  format_opts = {
+    async = true,
+    timeout_ms = 10000,
+  },
+  servers = {
+    ['clangd'] = { 'cpp', 'c' },
+  }
+})
