@@ -65,6 +65,7 @@
       thunderbird
       ffmpeg
       fastfetch
+      texliveFull
     ];
 
   };
