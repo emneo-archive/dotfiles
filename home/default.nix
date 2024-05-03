@@ -64,6 +64,7 @@
       exegol
       thunderbird
       ffmpeg
+      fastfetch
     ];
 
   };
