@@ -140,10 +140,6 @@
   # started in user sessions.
   # programs.mtr.enable = true;
   programs = {
-    gnupg.agent = {
-      enable = true;
-      enableSSHSupport = true;
-    };
     thunar = {
       enable = true;
       plugins = with pkgs.xfce; [

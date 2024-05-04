@@ -66,6 +66,7 @@
       ffmpeg
       fastfetch
       texliveFull
+      gnupg
     ];
 
   };
