@@ -66,7 +66,6 @@
       ffmpeg
       fastfetch
       texliveFull
-      gnupg
       tauon
       qbittorrent
     ];

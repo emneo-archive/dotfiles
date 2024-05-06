@@ -140,6 +140,11 @@
   # started in user sessions.
   # programs.mtr.enable = true;
   programs = {
+    gnupg.agent = {
+      enable = true;
+      enableSSHSupport = true;
+      pinentryPackage = pkgs.pinentry-curses;
+    };
     thunar = {
       enable = true;
       plugins = with pkgs.xfce; [
