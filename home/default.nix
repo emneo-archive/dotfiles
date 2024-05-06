@@ -68,7 +68,6 @@
       texliveFull
       tauon
       qbittorrent
-      steam
     ];
 
   };

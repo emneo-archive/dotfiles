@@ -90,6 +90,7 @@
       enable = true;
       powerOnBoot = true;
     };
+    steam-hardware.enable = true;
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -150,6 +151,12 @@
       plugins = with pkgs.xfce; [
         thunar-archive-plugin
         thunar-volman
+      ];
+    };
+    steam = {
+      enable = true;
+      extraCompatPackages = [
+        pkgs.proton-ge-bin
       ];
     };
   };
