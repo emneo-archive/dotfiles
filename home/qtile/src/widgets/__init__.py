@@ -12,7 +12,7 @@ from .overides import (
     Systray
 )
 
-from .spotify import SpotifyNowPlaying
+from .music import MusicNowPlaying
 from .wttr import Wttr
 
 __all__ = (
@@ -25,7 +25,7 @@ __all__ = (
     "Prompt",
     "QuickExit",
     "Separator",
-    "SpotifyNowPlaying",
+    "MusicNowPlaying",
     "Wttr",
     "TaskList",
     "Systray",

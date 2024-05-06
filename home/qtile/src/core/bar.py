@@ -10,7 +10,7 @@ from widgets import (
     Prompt,
     QuickExit,
     Separator,
-    SpotifyNowPlaying,
+    MusicNowPlaying,
     Wttr,
     Systray,
 )
@@ -32,7 +32,7 @@ class Bar(bar.Bar):
           widget.Spacer(length=bar.STRETCH),
           Prompt(),
           Wttr(),
-          SpotifyNowPlaying(),
+          MusicNowPlaying(),
           Battery(),
           Memory(),
           CPUGraph(),

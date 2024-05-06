@@ -1,12 +1,9 @@
-"""Spotify widget"""
+"""Music widget"""
 from typing import List
 import subprocess
 
 from libqtile import qtile
 from libqtile.widget import base
-
-
-COVER_PATH = "/tmp/spotify-now-playing.png"
 
 
 def get_stdout(cmd: List[str]) -> str:
@@ -24,17 +21,17 @@ def get_stdout(cmd: List[str]) -> str:
     return sub.stdout.decode("utf-8").strip()
 
 
-class SpotifyNowPlaying(base.InLoopPollText):
+class MusicNowPlaying(base.InLoopPollText):
     def __init__(self, **config):
         super().__init__("", update_interval=5, qtile=qtile, **config)
-        self.name = "Spotify now playing"
+        self.name = "Now playing"
 
     def poll(self) -> str:
-        is_playing = get_stdout(["playerctl", "--player=spotify", "status"])
+        is_playing = get_stdout(["playerctl", "status"])
         if is_playing != "Playing":
             return ""
-        artist = get_stdout(["playerctl", "--player=spotify", "metadata", "artist"])
-        title = get_stdout(["playerctl", "--player=spotify", "metadata", "title"])
+        artist = get_stdout(["playerctl", "metadata", "artist"])
+        title = get_stdout(["playerctl", "metadata", "title"])
         if artist == "" or title == "":
             return ""
-        return f" {artist} - {title}"
+        return f"𝄞 {artist} - {title}"

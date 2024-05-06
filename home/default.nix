@@ -67,6 +67,8 @@
       fastfetch
       texliveFull
       gnupg
+      tauon
+      qbittorrent
     ];
 
   };
