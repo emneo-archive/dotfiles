@@ -68,6 +68,7 @@
       tauon
       qbittorrent
       stremio
+      zathura
     ];
 
   };
