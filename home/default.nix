@@ -65,7 +65,6 @@
       thunderbird
       ffmpeg
       fastfetch
-      texliveFull
       tauon
       qbittorrent
       stremio
