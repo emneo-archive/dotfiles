@@ -69,6 +69,7 @@
       qbittorrent
       stremio
       zathura
+      lutris
     ];
 
   };
