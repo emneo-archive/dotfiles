@@ -70,6 +70,8 @@
       stremio
       zathura
       lutris
+      unipicker
+      xclip
     ];
 
   };
