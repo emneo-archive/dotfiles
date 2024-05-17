@@ -46,3 +46,7 @@ alias ff="fastfetch"
 function mayhem() {
     sed -i "s/;/;/g" $@
 }
+
+function rmayhem() {
+    sed -i "s/;/;/g" $@
+}
