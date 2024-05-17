@@ -41,3 +41,8 @@ alias wttr="curl https://wttr.in/toulouse"
 alias ufda="echo 'use flake' | tee .envrc; direnv allow"
 alias updls="betterlockscreen -u ~/assets/wallpaper.png"
 alias ff="fastfetch"
+
+# We doing a little bit of trolling :3
+function mayhem() {
+    sed -i "s/;/;/g" $1
+}
