@@ -13,7 +13,6 @@
 # Just changed it so that it shows the full hostname (Distrobox for example)
 PS1="\[\033[01;32m\]\u@\H\[\033[01;34m\] \w \$\[\033[00m\] "
 
-# tbh I only use eza because the colours look good, if there is an alternative I will switch
 alias ls="ls --color"
 alias l="ls --color -lh"
 alias ll="ls --color -lah"
