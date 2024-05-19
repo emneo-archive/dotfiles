@@ -11,4 +11,4 @@ _screen_attr = dict(
     wallpaper=os.path.expanduser("~/assets/wallpaper.png"),
     wallpaper_mode="fill")
 
-screens = [Screen(top=Bar(i), **_screen_attr) for i in range(2)]
+screens = [Screen(top=Bar(i), **_screen_attr) for i in range(3)]
