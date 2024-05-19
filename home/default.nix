@@ -73,6 +73,7 @@
       unipicker
       xclip
       obs-studio
+      python312Packages.black
     ];
 
   };
