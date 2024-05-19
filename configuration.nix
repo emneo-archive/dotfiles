@@ -165,6 +165,7 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
+  services.openssh.settings.X11Forwarding = true;
   services.blueman.enable = true;
 
   # Open ports in the firewall.
