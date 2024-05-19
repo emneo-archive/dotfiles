@@ -72,6 +72,7 @@
       lutris
       unipicker
       xclip
+      obs-studio
     ];
 
   };
