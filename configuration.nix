@@ -170,6 +170,7 @@
   services.openssh.enable = true;
   services.openssh.settings.X11Forwarding = true;
   services.blueman.enable = true;
+  services.gnome.gnome-browser-connector.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
