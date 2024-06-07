@@ -8,15 +8,8 @@
     ./kitty.nix
     ./bash
     ./vim
-    ./x
     ./tmux
     ./extra_files.nix
-    ./qtile
-    ./betterlockscreen
-    ./picom
-    ./dunst
-    ./thunar
-    ./flameshot.nix
     ./btop
     ./nvim
   ];
@@ -35,25 +28,17 @@
       neofetch
       onefetch
       tmux
-      feh
-      picom
       spotify
       gimp
       ncdu
       distrobox
-      brightnessctl
-      libnotify
       tldr
-      dmenu
-      pamixer
-      playerctl
       tokei
       ripgrep
       restic
       rclone
       vesktop
       signal-desktop
-      arandr
       ungoogled-chromium
       file
       zip

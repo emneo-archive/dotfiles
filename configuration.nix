@@ -59,17 +59,10 @@
   # services.xserver.enable = true;
   services.xserver = {
     enable = true;
-    displayManager.startx.enable = true;
-
-    windowManager.qtile = {
-      enable = true;
-      backend = "x11";
-    };
-
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
   };
-  services.fprintd.enable = true;
+  services.fprintd.enable = false;
   services.mullvad-vpn.enable = true;
   services.libinput.enable = true;
 
@@ -85,15 +78,21 @@
   # Enable sound.
   sound.enable = true;
   hardware = {
-    pulseaudio = {
-      enable = true;
-      package = pkgs.pulseaudioFull;
-    };
+    pulseaudio.enable = false;
     bluetooth = {
       enable = true;
       powerOnBoot = true;
     };
     steam-hardware.enable = true;
+  };
+
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    jack.enable = true;
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -108,7 +107,6 @@
       htop
       curl
       git
-      pavucontrol
       man-pages
       man-pages-posix
     ];
@@ -149,13 +147,6 @@
       enableSSHSupport = true;
       pinentryPackage = pkgs.pinentry-curses;
     };
-    thunar = {
-      enable = true;
-      plugins = with pkgs.xfce; [
-        thunar-archive-plugin
-        thunar-volman
-      ];
-    };
     steam = {
       enable = true;
       extraCompatPackages = [
@@ -168,8 +159,6 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
-  services.openssh.settings.X11Forwarding = true;
-  services.blueman.enable = true;
   services.gnome.gnome-browser-connector.enable = true;
 
   # Open ports in the firewall.
