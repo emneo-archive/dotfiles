@@ -162,7 +162,10 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
-  services.gnome.gnome-browser-connector.enable = true;
+  services.gnome = {
+    gnome-browser-connector.enable = true;
+    games.enable = true;
+  };
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
