@@ -57,14 +57,17 @@
 
   # Enable the X11 windowing system.
   # services.xserver.enable = true;
-  services.xserver = {
-    enable = true;
-    displayManager.gdm.enable = true;
-    desktopManager.gnome.enable = true;
+  services = {
+    fprintd.enable = true;
+    mullvad-vpn.enable = true;
+    libinput.enable = true;
+    fwupd.enable = true;
+    xserver = {
+      enable = true;
+      displayManager.gdm.enable = true;
+      desktopManager.gnome.enable = true;
+    };
   };
-  services.fprintd.enable = true;
-  services.mullvad-vpn.enable = true;
-  services.libinput.enable = true;
 
 
 
