@@ -89,6 +89,8 @@
       "org/gnome/settings-daemon/plugins/power" = {
         idle-dim = false;
         power-saver-profile-on-low-battery = false;
+        sleep-inactive-ac-type = "nothing";
+        sleep-inactive-battery-type = "nothing";
       };
       "org/gnome/desktop/interface".show-battery-percentage = true;
     };
