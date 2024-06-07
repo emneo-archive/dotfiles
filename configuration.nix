@@ -62,7 +62,7 @@
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
   };
-  services.fprintd.enable = false;
+  services.fprintd.enable = true;
   services.mullvad-vpn.enable = true;
   services.libinput.enable = true;
 
