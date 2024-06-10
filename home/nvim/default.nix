@@ -27,7 +27,7 @@
     extraPackages = with pkgs; [
       nil
       lua-language-server
-      nodePackages.pyright
+      pyright
       clang-tools
       llvmPackages_latest.clang
       nodejs
