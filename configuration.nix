@@ -101,7 +101,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.huntears = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "docker" "audio" ];
+    extraGroups = [ "wheel" "docker" "audio" "libvirtd" ];
     initialPassword = "kanker";
     packages = with pkgs; [
       firefox
@@ -156,7 +156,9 @@
         pkgs.proton-ge-bin
       ];
     };
+    virt-manager.enable = true;
   };
+  virtualisation.libvirtd.enable = true;
 
   # List services that you want to enable:
 

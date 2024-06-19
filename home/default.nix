@@ -93,6 +93,10 @@
         sleep-inactive-battery-type = "nothing";
       };
       "org/gnome/desktop/interface".show-battery-percentage = true;
+      "org/virt-manager/virt-manager/connections" = {
+        autoconnect = [ "qemu:///system" ];
+        uris = [ "qemu:///system" ];
+      };
     };
   };
   # TODO: Setup proper gnome settings
