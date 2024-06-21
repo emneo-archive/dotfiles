@@ -98,6 +98,9 @@
         autoconnect = [ "qemu:///system" ];
         uris = [ "qemu:///system" ];
       };
+      "org/gnome/desktop/peripherals/touchpad" = {
+        natural-scroll = false;
+      };
     };
   };
   # TODO: Setup proper gnome settings
