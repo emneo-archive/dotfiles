@@ -98,8 +98,7 @@
     jack.enable = true;
   };
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.huntears = {
+  users.users.emneo = {
     isNormalUser = true;
     extraGroups = [ "wheel" "docker" "audio" "libvirtd" ];
     initialPassword = "kanker";
