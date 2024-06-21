@@ -1,9 +1,9 @@
 [init]
     defaultBranch = master
 [user]
-    email = huntears@kreog.com
-    name = huntears
-    signingkey = 1C64EA38F2B14BFD4F038D3AAFCE980666C15CD0
+    email = emneo@kreog.com
+    name = emneo
+    signingkey = 5FD0400D0E78EAF9843148808EBFC4B924C62D20
 [commit]
     gpgsign = true
     verbose = yes
