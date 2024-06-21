@@ -77,6 +77,7 @@
         edge-tiling = true;
         attach-modal-dialogs = true;
         dynamic-workspaces = true;
+        workspaces-only-on-primary = true;
       };
       "org/gnome/desktop/media-handling".autorun-never = true;
       "org/gnome/desktop/notifications".show-in-lock-screen = false;
